@@ -1,0 +1,13 @@
+# Source codebases (private repos, not part of the pipeline)
+ai60/
+megafi/
+polymaxr/
+
+# OS files
+.DS_Store
+*.swp
+*~
+
+# Environment
+.env
+.env.local
