@@ -2,6 +2,7 @@
 ai60/
 megafi/
 polymaxr/
+proposals/
 
 # OS files
 .DS_Store
@@ -11,3 +12,5 @@ polymaxr/
 # Environment
 .env
 .env.local
+
+backlog.md

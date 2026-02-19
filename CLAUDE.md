@@ -15,12 +15,15 @@ This workspace is a content creation system with skills, agents, and rules. Not 
 │   ├── code-mining/               # Repo scanning for insights
 │   ├── copywriting/               # PAS/AIDA/BAB/4Ps/StoryBrand frameworks
 │   ├── humanizer/                 # 3-pass AI pattern detection and rewrite
-│   └── 10-10-post/                # Iterative scoring until all criteria 8+
+│   ├── 10-10-post/                # Iterative scoring until all criteria 8+
+│   └── proposal-pipeline/         # 6-phase Upwork proposal creation
+│       └── knowledge/             # Portfolio, proof assets, pricing, client signals
 ├── agents/                        # Dispatched automatically during pipeline
 │   ├── insight-architect.md       # Deep codebase exploration
 │   ├── draft-reviewer.md          # Depth/specificity/anti-AI review
 │   ├── post-verifier.md           # Final verification before delivery
-│   └── anti-ai-reviewer.md       # AI pattern scanner
+│   ├── anti-ai-reviewer.md       # AI pattern scanner
+│   └── proposal-reviewer.md      # Proposal format and persuasion review
 └── rules/                         # Always loaded, every message
     ├── never-do.md                # Hard kill rules (em dashes, emoji, AI vocab)
     ├── always-do.md               # Mandatory elements (contractions, short sentences)
@@ -37,6 +40,7 @@ This workspace is a content creation system with skills, agents, and rules. Not 
 | `/copywriting` | "apply framework", "structure the post" | Select and apply PAS/AIDA/BAB/4Ps/StoryBrand based on insight type |
 | `/humanizer` | "humanize", "AI check" | 3-pass system: detect AI patterns, rewrite, run Coffee/Template/Scroll/AI Detector tests |
 | `/10-10-post` | "score this", "10/10" | Evaluate on 5 criteria (Depth, Specificity, Non-obvious, Human, Anti-AI), fix weak areas, re-score until all 8+ |
+| `/proposal-pipeline` | "write proposal", "upwork proposal" | 6-phase Upwork proposal creation: Job Intake, Client Assessment, Experience Mapping, Design, Draft, Review |
 
 ## Available Agents
 
@@ -46,6 +50,7 @@ This workspace is a content creation system with skills, agents, and rules. Not 
 | `draft-reviewer` | Phase 6 (Review) | Reviews drafts for depth, specificity, groundedness. Confidence scoring >= 80 threshold |
 | `anti-ai-reviewer` | Phase 6 (Review) | Scans for AI patterns with severity tiers. One Critical = draft rejected |
 | `post-verifier` | Before Completion | Final checklist: source exists, depth met, elements present, tests pass |
+| `proposal-reviewer` | Phase 6 of proposal-pipeline | Reviews proposals against 7 Winning Patterns, format rules, persuasion score >= 70 |
 
 ---
 
